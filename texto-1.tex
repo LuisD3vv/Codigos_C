@@ -1,0 +1,183 @@
+\documentclass{article} % Tipo de trabajo que se realizara
+\usepackage[utf 8]{inputenc} %paquete de lenguaje
+\usepackage[latin1, latin9]{inputenc} %paquete de lenguaje
+\usepackage[T1]{fontenc} %paquete de lenguaje
+\usepackage[spanish, activeacute]{babel} %Paquete de lenguaje
+\usepackage{graphicx} %paquete necesario si quieres insertar imagenes
+\usepackage{graphics} %paquete requerido si quieres hacer gráficas
+\usepackage{multicol} %paquete de formato
+\usepackage{tikz} %los paquetes tikz sera usados para crear graficas usando codigo
+\usepackage{pgfplots}
+\usepackage{tkz-fct}
+\usepackage{xcolor}
+\usepackage[usenames]{color}
+\usepackage{amsmath} %paquetes necesarios para la compilación de matemáticas
+\usepackage{amsfonts}
+\usepackage{dsfont}
+\usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsbsy}
+\usepackage{lmodern}
+\usepackage{mathtools}
+\usepackage{latexsym}
+\usepackage{minted}
+\usepackage{pgfplots}
+\usepackage[papersize={216mm,271mm},tmargin=20mm,bmargin=20mm,
+lmargin=20mm,rmargin=20mm]{geometry}
+\usepackage{float}
+\usepackage[none]{hyphenat}
+\usetikzlibrary{calc, datavisualization}
+\tikzset{every picture/.style={line width=0.2mm}}
+
+
+\pgfplotsset{compat = 1.8}
+\tikzset{flechaizq/.style={<-,>=latex}}
+\tikzset{flechader/.style={->,>=latex}}
+\tikzset{flechadoble/.style={<->,>=latex}}
+\tikzset{punteada/.style={line width = 2, dash pattern = on 6pt off 3pt}}
+\tikzset{continua/.style={line width = 1, flechadoble}}
+\tikzset{conector/.style={line width = 2, flechadoble, dashed}}
+
+\usetikzlibrary{shapes}
+\usetikzlibrary{positioning}
+\input{tcilatex}
+
+%%Todas las lineas de codigo anteriores
+%%no deben de ser modificadas por ahora
+
+%% En esta parte escribiran el titulo del trabajo a entregar,
+%su nombre o los nombres de sus compañeros (si el trabajo se hace en equipo)
+%y la fecha de entrega.
+\title{Primer tarea de Cálculo y de probabilidad usando \LaTeX}
+\author{Alumno}
+\date{ }
+
+\begin{document}
+\sloppy
+\pagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Problema de probabilidad.- De una caja que contiene $3$ bolas rojas,
+$2$ blancas y $4$ azules, se extrae una bola al azar}  
+
+\begin{enumerate}
+    \item Encuentre la probabilidad de que sea roja
+    \item Encuentre la probabilidad de que no sea roja
+    \item Encuentre la probabilidad de que sea blanca
+    \item Encuentre la probabilidad de que sea roja o azul
+\end{enumerate}
+
+\noindent Para calcular las probabilidades del problema solicitado
+primeramente definimos el espacio muestral $S$ el cuál es:
+
+\bigskip
+
+\begin{equation*}
+    S = \left\{roja, roja, roja, blanca, blanca, azul, azul, azul, azul\right\}
+\end{equation*}
+
+\bigskip
+
+\noindent Definir los eventos a los cuales se les calcularan las probabilidades
+
+\begin{itemize}
+    \item $\left\{ X=\text{la bola sea roja}\right\} $
+
+    \item $\left\{ X=\text{la bola \textbf{NO} sea roja}\right\} $
+
+    \item $\left\{ X=\text{la bola sea blanca}\right\} $
+
+    \item $\left\{ X=\text{la bola sea roja o azul}\right\} $
+\end{itemize}
+
+\noindent Se calculan las probabilidades de los eventos usando la regla de probabilidad simple
+
+\begin{equation*}
+    P(X)= \frac{\text{Número de casos favorables de }X}{\text{Número de casos totales en }S}
+\end{equation*}
+
+\section*{Respuestas}
+
+% \begin{enumerate}
+%     \item
+%     \item
+% \end{enumerate}
+
+\section*{Problema de Calculo.- Graficar y escribir el dominio,
+el contradominio y la regla de correspondencia de las
+siguientes funciones:}
+
+\begin{enumerate}
+    \item La función lineal
+    \item La función cuadrática
+    \item La función exponencial de base Euler
+    \item La función logaritmo natural
+    \item La función Seno
+    \item La función Coseno
+\end{enumerate}
+
+\section*{Respuestas}
+
+\begin{enumerate}
+    \item El dominio de una función lineal es el conjunto de todos
+    los valores que la variable independiente (generalmente \( x \))
+    puede tomar. Las funciones lineales tienen la forma general de regla de correspondencia:
+
+\[
+f(x) = mx + b
+\]
+
+Donde:
+- \( m \) es la pendiente
+- \( b \) es la ordenada al origen
+
+Para este tipo de funciones, no hay restricciones en los valores
+que puede tomar \( x \), ya que no se presentan denominadores que
+puedan ser cero ni raíces cuadradas de números negativos, ni otras
+operaciones que limiten el dominio.
+
+Por lo tanto, el \textbf{dominio de una función lineal} es el
+conjunto de todos los números reales:
+
+\[
+\text{Dominio} = (-\infty, \infty)
+\]
+\begin{tikzpicture}
+    % Definir los ejes
+    \draw[->] (-3,0) -- (3,0) node[right] {$x$}; % Eje x
+    \draw[->] (0,-2) -- (0,5) node[above] {$y$}; % Eje y
+
+    % Etiquetas
+    \draw (-0.2,1) node[left] {1} -- (0.2,1);
+    \draw (-1,0) node[below] {-1} -- (-1,0.2);
+    \draw (1,0) node[below] {1} -- (1,0.2);
+
+    % Graficar la función y = 2x + 1
+    \draw[domain=-2:2,smooth,variable=\x,blue,thick]
+    plot ({\x},{2*\x + 1}) node[right] {$f(x) = 2x + 1$};
+
+    % Marcar la intersección en el eje y
+    \filldraw[blue] (0,1) circle (2pt);
+
+    % Marcar la pendiente
+    \draw[red,thick] (0,1) -- (1,3);
+    \draw[red] (0.5,2) node[above] {Pendiente $m=2$};
+
+    % Etiqueta de la función
+    \draw (2,4.5) node[right] {Función lineal};
+
+\end{tikzpicture}
+
+    \item
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section*{Código fuente}
+\inputminted{latex}{main.tex}
+
+
+\end{document}
