@@ -1,0 +1,148 @@
+
+# Notas sobre la sintaxis básica de C
+
+## 1. Estructura básica de un programa en C
+Cada programa en C tiene la siguiente estructura general:
+
+```c
+#include <stdio.h>  // Incluir librerías necesarias
+
+int main() {        // Punto de entrada principal del programa
+    // Código del programa
+    return 0;       // Indicar que el programa terminó correctamente
+}
+```
+
+---
+
+## 2. Declaraciones
+Las variables deben declararse antes de ser usadas, especificando su tipo.
+
+```c
+int a;      // Declaración de una variable entera
+float b;    // Declaración de una variable de punto flotante
+char c;     // Declaración de un carácter
+```
+
+---
+
+## 3. Tipos de datos
+C utiliza tipos básicos como:
+
+- **Enteros**: `int`, `short`, `long`
+- **Punto flotante**: `float`, `double`
+- **Caracteres**: `char`
+- **Booleanos**: `stdbool.h` (`true`, `false`)
+
+Ejemplo:
+```c
+int edad = 25;
+float altura = 1.75;
+char inicial = 'A';
+```
+
+---
+
+## 4. Operadores
+C soporta varios operadores:
+- **Aritméticos**: `+`, `-`, `*`, `/`, `%`
+- **Relacionales**: `==`, `!=`, `>`, `<`, `>=`, `<=`
+- **Lógicos**: `&&`, `||`, `!`
+- **Asignación**: `=`, `+=`, `-=`, `*=`, `/=`
+
+Ejemplo:
+```c
+int x = 10, y = 20;
+int suma = x + y; // Resultado: 30
+```
+
+---
+
+## 5. Estructuras de control
+### Condicional `if`-`else`:
+```c
+if (condición) {
+    // Código si la condición es verdadera
+} else {
+    // Código si la condición es falsa
+}
+```
+
+### Bucle `for`:
+```c
+for (int i = 0; i < 5; i++) {
+    printf("Valor de i: %d\n", i);
+}
+```
+
+### Bucle `while`:
+```c
+int contador = 0;
+while (contador < 5) {
+    printf("Contador: %d\n", contador);
+    contador++;
+}
+```
+
+### `switch`:
+```c
+int opcion = 2;
+switch (opcion) {
+    case 1:
+        printf("Opción 1 seleccionada\n");
+        break;
+    case 2:
+        printf("Opción 2 seleccionada\n");
+        break;
+    default:
+        printf("Opción no válida\n");
+}
+```
+
+---
+
+## 6. Entrada y salida
+### Entrada:
+```c
+int numero;
+printf("Introduce un número: ");
+scanf("%d", &numero);
+```
+
+### Salida:
+```c
+printf("El número introducido es: %d\n", numero);
+```
+
+---
+
+## 7. Comentarios
+- Comentario de una sola línea:
+  ```c
+  // Esto es un comentario
+  ```
+
+- Comentario de múltiples líneas:
+  ```c
+  /* Esto es un comentario
+     que ocupa varias líneas */
+  ```
+
+---
+
+## 8. Funciones
+C permite crear funciones para dividir el programa en bloques lógicos.
+
+```c
+#include <stdio.h>
+
+// Declaración de la función
+void saludar() {
+    printf("¡Hola, mundo!\n");
+}
+
+int main() {
+    saludar(); // Llamada a la función
+    return 0;
+}
+```
