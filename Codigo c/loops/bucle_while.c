@@ -10,7 +10,8 @@ int main(){
 
 	}
 
-
+	buscar i++
+	++i
 	return 0;
 }
 /*
