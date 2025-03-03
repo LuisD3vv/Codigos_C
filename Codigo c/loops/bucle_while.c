@@ -1,31 +1,12 @@
 #include <stdio.h>
 
-int main(){
-    int contador = 0;
+int main () {
+	int a;
+	printf("ingresa un numero: ");
+	scanf("%d", &a);
 
-	//Bucle while
-	while (contador < 50){
-	    printf("contador es %d\n", contador + 1);
-	    contador++;// recordemos que el postfijo es igual a contador = contador + 1
+	for(int i=0,j=0; a < 100; i++, j++)
+		printf("a es %d y el %d",i , j);
 
-	}
-
-	buscar i++
-	++i
 	return 0;
 }
-/*
-A tomar en cuenta
-sintaxis
-	while (condicion) {
-		codigo a ejecutar si es true
-	} 
-
-Condicion: Es una expresion logica booleana, mientras se evalue (True), el cuerpo del codigo se ejecutara.
-
-{}: Delimitan el bloque de codigo que pertenece al bucle. si el cuerpo contiene una sola instruccion, no son necesarias las llaves.
-
-semicolon; :No se coloca despues del parentesis en la declaracion while.
-
-
-*/

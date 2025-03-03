@@ -1,14 +1,13 @@
 #include <stdio.h>
 
-int main()
-{
-	int y, x;
-	do
-	{
-		y = f(x);
-		x--;
-
-	} while (x > 0);
-
-	return 0;
+void main(){
+	int i=1, n;
+	
+	printf("Escribe numero de la tabla: ");
+	scanf("%d", &n);
+	do {
+		printf("%4d * %4d = %4d\n", i,n,i*n);
+		i++;
+	}
+	while(i<=10);
 }

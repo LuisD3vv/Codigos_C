@@ -1,34 +1,23 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main () {
+void main() {
 
-    int a,b, c ;
-    char op;
+int i, j, matriz_c[2][3];
 
 
-    printf("Escriba expresion (ej. 5 + 6) = ");
-    scanf("%d %c %d",&a,&op,&b);
+int matriz_1[2][3] = {
+    {3,2,3},
+    {4,5,6}
+};
 
-    switch (op) {
-    case '+':
-        printf("%d\n", a + b);
-        break;
-        
-    case '-':
-        printf("%d", a-b);
-        break;
-
-    case '*':
-        printf("%d", a * b);
-        break;
-    case '/':
-        printf("%d", a / b);
-        break;
-
-    default:
-        printf("ingresa un valor correcto\n");
-
+int matriz_2[2][3] = {
+    {1,2,4},
+    {4,9,6}
+};
+for (i=0; i<2; i++) {
+    for (j=0; j<3; j++) {
     }
-
-    return 0;
+}
+printf("La matriz ah [%d] [%d] y [%d] [%d]", matriz_1[i][j], matriz_2[i][j]);
 }
