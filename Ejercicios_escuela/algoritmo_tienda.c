@@ -2,45 +2,33 @@
 
 int main()
 {
-	// productos
-	int coca_cola = 19, galletas = 15, jugo = 20, total = 0, importe_final = 0, cnt_cocas = 0, cnt_jugo = 0, cnt_galleta = 0;
-	float descuento = 0.15, descuento_total = 0.85;
+	int escalar;
 
-	// imprimir el menu
+	int matriz[3][3] = {
+		{1, 2, 3},
+		{4, 5, 6},
+		{7, 8, 9}};
 
-	printf("Bienvenido, este es nuestro menu:\n Coca cola $19\n Juguito de uva $20\n Galletas $15\n");
+	printf("ingresa un numero para multiplicar la matriz: ");
+	scanf("%d", &escalar);
 
-	// informarle al usuario que debe de hacer
-
-	printf("a continuacion, debera introducir la cantidad de cada producto.\n");
-
-	// recibir datos del usuario
-	printf("Cantidad de cocas: ");
-	scanf("%d", &cnt_cocas);
-	printf("Cantidad de jugos: ");
-	scanf("%d", &cnt_jugo);
-	printf("cantidad de galletas: ");
-	scanf("%d", &cnt_galleta);
-
-	// Realizar la operacion
-	total = (cnt_cocas * coca_cola) + (cnt_jugo * jugo) + (cnt_galleta * galletas);
-
-	// realizar descision
-
-	if (total >= 300)
+	for (int i = 0; i < 3; i++)
 	{
-		importe_final = total * descuento_total;
-		printf("%d la cantidad con descuento es de", importe_final);
-	}
-	else if (total < 300)
+		for (int j = 0; j < 3; j++)
+		{
+			matriz[i][j] = matriz[i][j] * escalar;
+		}
+	};
+	// Imprimir cada elemento ya multiplicado por el escalar, por eso se recorre de nuevo la matriz
+	printf("La matriz multiplicada es: \n");
+	for (int i = 0; i < 3; i++)
 	{
-		printf("%d, no se le ha aplicado descuento, su total es de", total);
-	}
-	else
-	{
-		printf("La concha de tu madre bob esponja");
-	}
-	// Terminar para ma;ana y repasar
+		for (int j = 0; j < 3; j++)
+		{
+			printf("[%d]", matriz[i][j]);
+		}
+		printf("\n");
+	};
 
 	return 0;
 }
