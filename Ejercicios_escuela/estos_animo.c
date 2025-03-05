@@ -31,7 +31,7 @@ void main()
 	{
 		for (j = 0; j < 2; j++)
 		{
-			matriz_c[i][j] = matriz_1[i][j] + matriz_2[i][j];
+			matriz_c[i][j] = matriz_1[i][j] * matriz_2[i][j];
 		}
 	}
 	for (i = 0; i < 3; i++)

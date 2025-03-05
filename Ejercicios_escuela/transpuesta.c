@@ -12,13 +12,24 @@ void main()
             scanf("%d", &matriz[i][j]);
         }
     }
+
+    printf("Matriz original\n");
+    for (i = 0; i < 3; i++)
+    {
+        for (j = 0; j < 2; j++)
+        {
+            printf("[%d]", matriz[i][j]);
+        }
+        printf("\n");
+    }
+    printf("Matriz Transpuesta\n");
     // Basicamente la matriz transpuesta es convertiendo [m][n] x [n][m]
     for (i = 0; i < 2; i++)
     {
         for (j = 0; j < 3; j++)
         {
-            matriz_tras[j][i] = matriz[i][j];
-            printf("[%d] ", matriz_tras[j][i]);
+            matriz_tras[i][j] = matriz[j][i];
+            printf("[%d] ", matriz_tras[i][j]);
         }
         printf("\n");
     }
