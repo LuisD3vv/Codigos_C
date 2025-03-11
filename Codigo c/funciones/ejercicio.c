@@ -1,20 +1,25 @@
 #include <stdio.h>
 
-void mayor(int primero, int segundo)
-{
-    if (primero > segundo)
-    {
-        printf("El numero mayor es: %d\n", primero);
-    }
-    else
-    {
-        printf("El numero mayor es: %d\n", segundo);
-    }
-}
-int main()
-{
-    mayor(2, 4);
-    mayor(5, 1);
+#define max 3
 
-    return 0;
+void main()
+{
+    int matriz[max][max];
+
+    for (int i = 0; i < max; i++)
+    {
+        for (int j = 0; j < max; j++)
+        {
+            printf("ingresa los valores de la matriz: ");
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+    for (int i = 0; i < max; i++)
+    {
+        for (int j = 0; j < max; j++)
+        {
+            printf("[%d] ", matriz[i][j]);
+        }
+        printf("\n");
+    }
 }
