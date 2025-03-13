@@ -2,33 +2,41 @@
 
 int main()
 {
-	int escalar;
+	int n = 2;
+	int matriz[n][n];
+	int escalar = 0;
 
-	int matriz[3][3] = {
-		{1, 2, 3},
-		{4, 5, 6},
-		{7, 8, 9}};
+	for (int i = 0; i < n; i++)
+	{
+		for (int j = 0; j < n; j++)
+		{
+			printf("ingresa los elementos: ");
+			scanf("%d", &matriz[i][j]);
+		}
+	}
 
-	printf("ingresa un numero para multiplicar la matriz: ");
+	printf("ingresa el escalar: ");
 	scanf("%d", &escalar);
 
-	for (int i = 0; i < 3; i++)
+	int matriz_b[n][n];
+
+	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < 3; j++)
+		for (int j = 0; j < n; j++)
 		{
-			matriz[i][j] = matriz[i][j] * escalar;
+			matriz_b[i][j] = escalar * matriz[i][j];
 		}
-	};
-	// Imprimir cada elemento ya multiplicado por el escalar, por eso se recorre de nuevo la matriz
-	printf("La matriz multiplicada es: \n");
-	for (int i = 0; i < 3; i++)
+	}
+	printf("la matriz resultante multiplicada por el escalar es la siguiente\n");
+	for (int i = 0; i < n; i++)
 	{
-		for (int j = 0; j < 3; j++)
+		for (int j = 0; j < n; j++)
 		{
-			printf("[%d]", matriz[i][j]);
+			printf("[%d] ", matriz_b[i][j]);
 		}
 		printf("\n");
-	};
+	}
+	printf("\n");
 
 	return 0;
 }

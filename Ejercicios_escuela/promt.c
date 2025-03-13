@@ -1,22 +1,33 @@
 #include <stdio.h>
 
+void main()
+{
+    int matriz[3][3];
+    int numero;
+    int suma = 0;
 
-void main() {
-    int var1 = 10;
-    float var2 = 20;
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            printf("ingresa los elementos: ");
+            scanf("%d", &matriz[i][j]);
+        }
+    }
 
-    printf("escriba el valor de var1: ");
-    scanf("%d", &var1);
-    printf("el valor de var 1 es %d\n", var1);
+    printf("ingresa el numero a contar: ");
+    scanf("%d", &numero);
 
-    printf("escriba el valor de var2: ");
-    scanf("%f", &var2);
-    printf("El  valor de var 2 es %f\n3", var2);
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 3; j++)
+        {
+            if (matriz[i][j] == numero)
+            {
+                suma++;
+            }
+        }
+    }
 
-    printf("el valor de var1 es: %d y el del valor2  %.2f\n", var1, var2);
+    printf("el numero '%d' se encuentra %d veces en la matriz \n", numero, suma);
 }
-
-
-// Secuencias de escape y salida de datos, operadores
-// funciones y librerias, estructuras de control, estructuras de datos
-// char arrays, 
