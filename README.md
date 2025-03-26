@@ -6,4 +6,4 @@ Contenido sobre C de una manera principiante, el camino inical del heroe por asi
 >No olvidar de complementar todo lo aqui visto con documentacion oficial o fuentes oficiales, asi como la practica constante y resolver ejercicios de logica.
 
 >[!IMPORTANT]
->Los codigos aqui introducidos, son solamente para fines educativos, los ejemplos y codigos aqui tratados son de repaso y material de estudio estudio para conocer el uso de las diferentes funciones y bibliotecas, asi como la logica detras de los codigos y ejemplo utilizados en este repositorio.        
+>Los codigos aqui introducidos, son solamente para fines educativos, los ejemplos y codigos aqui tratados son de repaso y material de estudio, para conocer el uso de las diferentes funciones y bibliotecas, asi como la logica detras de los codigos y ejemplo utilizados en este repositorio.        
