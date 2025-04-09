@@ -1,9 +1,6 @@
 /* Luis Alejandro Aguilar Soberanes |  grupo 1-1  | 02/04/2025
-   Licenciatura en ciencia de datos 2025
+   Licenciatura en ciencia de datos FIC  2025
    Universidad autonoma de culiacan
-
-
-
    */
 
 #include <stdio.h>
