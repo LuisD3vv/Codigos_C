@@ -1,0 +1,57 @@
+
+// 1. 🔠 Mayúsculas a minúsculas
+// Enunciado:
+
+>[!NOTE]
+>asi es mis estimanios
+
+// Crea un programa que reciba una palabra como argumento desde la línea de comandos y la convierta a minúsculas usando una función.
+
+// Ejemplo de uso:
+
+// bash
+// Copiar
+// Editar
+// ./minusc palabra
+// # salida: palabra en minúsculas
+// Conceptos a practicar:
+
+// Validación de argc
+
+// Recorrido de cadenas (char *)
+
+// Función que modifique o muestre la cadena
+
+// 2. ➕ Suma de enteros desde argv
+// Enunciado:
+
+// Escribe un programa que reciba varios números enteros desde la línea de comandos, los sume usando una función y muestre el total.
+
+// Ejemplo:
+
+// bash
+// Copiar
+// Editar
+// ./suma 4 10 3
+// # salida: La suma es 17
+// Pistas:
+
+// atoi(argv[i]) para convertir texto a entero.
+
+// Usa una función int sumar(int argc, char *argv[]).
+
+// 3. 🔄 Reverso de argumentos
+// Enunciado:
+
+// Crea un programa que reciba varios argumentos y los imprima en orden inverso, usando una función.
+
+// Ejemplo:
+
+// bash
+// Copiar
+// Editar
+// ./reverso hola mundo prueba
+// # salida:
+// prueba  
+// mundo  
+// hola

@@ -12,8 +12,8 @@ void main () {
     char nombre[10];
 
     for(int i = 0; i < sizeof(nombre) / sizeof(nombre[0]); i++) {
-        printf(" %d", i);
-        printf("ingresa tu nombre caracter por caracter: ");
+        printf("%d ", i);
+        printf(" ingresa tu nombre caracter por caracter: ");
         scanf(" %c", &nombre[i]);
         if(isdigit(nombre[i])) {
             printf("ingresa una letra\n");
