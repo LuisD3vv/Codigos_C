@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <hpdf.h>
 
 int main() {
     HPDF_Doc pdf;

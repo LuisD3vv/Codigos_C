@@ -59,6 +59,7 @@
   "C_Cpp.errorSquiggles": "disabled",
   "files.associations": {
     "*.rmd": "markdown",
-    "stdio.h": "c"
+    "stdio.h": "c",
+    "vector": "c"
   }
 }
